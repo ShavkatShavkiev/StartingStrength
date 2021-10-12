@@ -14,21 +14,16 @@ class Header extends React.Component {
         <View style={headerStyle.big3}>
           <View style={headerStyle.lifts}>
           <Text style={headerStyle.items, headerStyle.liftName}>Bench</Text>
-          <Text style={headerStyle.items}>265</Text>
+          <Text style={headerStyle.items, headerStyle.weight}>265</Text>
           </View>
           <View style={headerStyle.lifts}>
           <Text style={headerStyle.items, headerStyle.liftName}>Squat</Text>
-          <Text style={headerStyle.items}>265</Text>
+          <Text style={headerStyle.items, headerStyle.weight}>265</Text>
           </View>
           <View style={headerStyle.lifts}>
           <Text style={headerStyle.items, headerStyle.liftName}>Deadlift</Text>
-          <Text style={headerStyle.items}>265</Text>
+          <Text style={headerStyle.items, headerStyle.weight}>265</Text>
           </View>
-        </View>
-        <View style={headerStyle.weeks}>
-          <Text>5/5/5</Text>
-          <Text>3/3/3</Text>
-          <Text>5/3/1</Text>
         </View>
       </View>
     )
@@ -39,7 +34,8 @@ class Header extends React.Component {
 
 const headerStyle = StyleSheet.create({
   container: {
-    flex: .3,
+    flex: .22,
+    marginTop: 40,
     backgroundColor: 'red',
     justifyContent: 'center'
   },
@@ -51,17 +47,16 @@ const headerStyle = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
-  weeks: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-
-  },
-  liftName: {
-    fontSize: 24,
-    color: 'white'
-  },
   lifts: {
     alignItems: 'center'
+  },
+  liftName: {
+    fontSize: 15,
+    color: 'white'
+  },
+  weight: {
+    fontSize: 50,
+    color: 'white'
   }
 })
 

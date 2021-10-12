@@ -3,6 +3,8 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import Header from './comps/header.js'
 import Lifts from './comps/Lift.js'
+import Weeks from './comps/week.js'
+
 
 class App extends React.Component {
 
@@ -10,6 +12,7 @@ class App extends React.Component {
     return (
       <View style={styles.container}>
         <Header />
+        <Weeks />
         <Lifts />
         <StatusBar style="auto" />
       </View>
