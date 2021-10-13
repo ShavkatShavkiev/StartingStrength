@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Alert } from 'react-native';
+import { StyleSheet, Text, View, Alert, TouchableOpacity } from 'react-native';
 
 class Weeks extends React.Component {
   constructor(props){
@@ -18,10 +18,17 @@ class Weeks extends React.Component {
   render(){
     return (
       <View style={headerStyle.weeks}>
-      <Text style={{ color: this.state.selectedWeek === 1 ? 'white' : 'black' }} onPress={() => this.weekPress(1)}>5/5/5</Text>
-      <Text style={{ color: this.state.selectedWeek === 2 ? 'white' : 'black' }} onPress={() => this.weekPress(2)}>3/3/3</Text>
-      <Text style={{ color: this.state.selectedWeek === 3 ? 'white' : 'black' }} onPress={() => this.weekPress(3)}>5/3/1</Text>
-    </View>
+        <TouchableOpacity style={[this.state.selectedWeek === 1 ? headerStyle.selectedWeek : headerStyle.week]} onPress={() => this.weekPress(1)}>
+          <Text style={[this.state.selectedWeek === 1 ? headerStyle.selectedWeek : headerStyle.week]}>5/5/5</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[this.state.selectedWeek === 2 ? headerStyle.selectedWeek : headerStyle.week]} onPress={() => this.weekPress(2)}>
+          <Text style={[this.state.selectedWeek === 2 ? headerStyle.selectedWeek : headerStyle.week]}>3/3/3</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[this.state.selectedWeek === 3 ? headerStyle.selectedWeek : headerStyle.week]} onPress={() => this.weekPress(3)}>
+          <Text style={[this.state.selectedWeek === 3 ? headerStyle.selectedWeek : headerStyle.week]}>5/3/1</Text>
+        </TouchableOpacity>
+
+      </View>
     )
   }
 
@@ -33,11 +40,23 @@ const headerStyle = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingBottom: 10,
-    fontSize: 20
+    marginBottom: -9
   },
   week: {
     color: 'black',
-    fontSize: 17,
+    fontSize: 19,
+    height: 30,
+    width: 90,
+    textAlign: 'center',
+  },
+  selectedWeek: {
+    color: 'white',
+    fontSize: 19,
+    borderBottomWidth: 3,
+    borderBottomColor: 'white',
+    height: 30,
+    width: 90,
+    textAlign: 'center'
   }
 })
 

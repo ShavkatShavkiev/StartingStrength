@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React,{useEffect} from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Alert } from 'react-native';
 import Header from './comps/header.js'
 import Lifts from './comps/Lift.js'
 import Weeks from './comps/week.js'
@@ -50,6 +50,9 @@ class App extends React.Component {
   }
 
   liftNumberUpdated = (index, weight) => {
+    if(weight > 350){
+      Alert.alert('DAMMMM Geting Strong I See!')
+    }
     let updated = this.state.allLifts
     updated[index].number = weight
     this.setState({
@@ -70,7 +73,6 @@ class App extends React.Component {
         <Header lifts={this.state.allLifts} changeCurrentLift={this.changeCurrentLift} liftNumberUpdated={this.liftNumberUpdated}/>
         <Weeks changeWeek={this.changeWeek}/>
         <Lifts lift={this.state.allLifts} current={this.state.currentLift} week={this.state.week}/>
-        <Footer />
         <StatusBar style="auto" />
       </View>
     );
