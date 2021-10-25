@@ -1,4 +1,4 @@
 # Starting Strength
-<img src='/848775.jpg' alt='banner'/>
-## Display
-<img src='/ezgif.com-gif-maker.gif' alt='recording'/>
+<img src='/assets/banner.jpg' alt='banner'/>
+<h2>Display
+<img src='/assets/ezgif.com-gif-maker.gif' alt='recording'/>
