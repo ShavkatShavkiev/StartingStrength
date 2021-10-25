@@ -51,7 +51,7 @@ class App extends React.Component {
 
   liftNumberUpdated = (index, weight) => {
     if(weight > 350){
-      Alert.alert('DAMMMM Geting Strong I See!')
+      Alert.alert('Very strong')
     }
     let updated = this.state.allLifts
     updated[index].number = weight
