@@ -1,4 +1,4 @@
-<h1>Starting Strength
+# Starting Strength
 
- 
-  <h2>Show Case
+## Display
+<img  src='https://streamable.com/e9yzhb' alt='recording'/>
