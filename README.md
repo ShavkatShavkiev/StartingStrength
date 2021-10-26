@@ -11,9 +11,12 @@
 <p>Third week you will do 1 working set's of 5 reps, followed by 1 set of 3 reps, and lastly you will do 1 set and you will aim todo 1 or more reps</p>
 <p> For more information you can read this <a href='https://www.t-nation.com/workouts/5-3-1-how-to-build-pure-strength/'>article</a></p>
 <h2>How do I run this app on my local machine?</h2>
-1. Fork this repo
-2. Clone the forked repo on to you're machine
-3. CD into the repo in you're local machine
-4. run this command <strong>npm install</strong>
-5. run this command <strong>npm start</strong>
-6. If everything was done correctly you should see a tab open up on you're brower with instructions. Simply follow those instructions and you should be up and running in no time. 
+<ol>
+  <li>Fork this repo</li>
+  <li>Clone the forked repo on to you're machine</li>
+  <li>CD into the repo in you're local machine</li>
+  <li>run this command <strong>npm install</strong></li>
+  <li>run this command <strong>npm start</strong></li>
+  <li>If everything was done correctly you should see a tab open up on you're brower with instructions. Simply follow those instructions and you should be up and running in no time.</li>   
+</ol>
+
