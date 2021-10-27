@@ -14,10 +14,10 @@ For more information you can read this <a href='https://www.t-nation.com/workout
 <h2>How do I run this app on my local machine?</h2>
 <ol>
   <li>Fork this repo</li>
-  <li>Clone the forked repo on to you're machine</li>
+  <li>Clone the forked repo onto you're machine</li>
   <li>CD into the repo in you're local machine</li>
   <li>run this command <strong>npm install</strong></li>
   <li>run this command <strong>npm start</strong></li>
-  <li>If everything was done correctly you should see a tab open up on you're brower with instructions. Simply follow those instructions and you should be up and running in no time.</li>   
+  <li>If everything was done correctly you should see a tab open up on your browser with instructions. Simply follow those instructions and you should be up and running in no time.</li>   
 </ol>
 
